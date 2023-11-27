@@ -15,6 +15,11 @@ public class HeapSortTest {
         return randomDataArray;
     }
 
-    public static void testAlgorithmTime() {
+    public static void testAlgorithmTime(
+            String testNumber,
+            String algorithmName,
+            int size,
+            int bound
+    ) {
     }
 }
