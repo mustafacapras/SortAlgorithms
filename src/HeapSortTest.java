@@ -54,4 +54,15 @@ public class HeapSortTest {
         }
         return true;
     }
+
+    public static void main(String[] args) {
+        int testSize = 10;
+        int dataBound = 100;
+
+        // Test the algorithm with random data and measure the time taken
+        testAlgorithmTime("1", "HeapSort", testSize, dataBound);
+
+        // Test the algorithm and print the sorted array
+        testAlgorithm("HeapSort", testSize, dataBound);
+    }
 }
