@@ -55,7 +55,7 @@ public class HeapSortTest {
         return true;
     }
 
-    /* public static void main(String[] args) {
+    public static void main(String[] args) {
         int testSize = 10;
         int dataBound = 100;
 
@@ -64,5 +64,5 @@ public class HeapSortTest {
 
         // Test the algorithm and print the sorted array
         testAlgorithm("HeapSort", testSize, dataBound);
-    }*/
+    }
 }
