@@ -11,4 +11,16 @@ public class RadixSort {
         return arr;
     }
 
+    private static void countingSort(int[] arr, int exp) {
+        int n = arr.length;
+        int[] output = new int[n];
+        int[] count = new int[10];
+
+        Arrays.fill(count, 0);
+
+        for (int value : arr) {
+            count[(value / exp) % 10]++;
+        }
+
+    }
 }
