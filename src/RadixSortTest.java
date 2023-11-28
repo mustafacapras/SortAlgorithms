@@ -16,6 +16,14 @@ public class RadixSortTest {
         return randomDataArray;
     }
 
+    public static void testAlgorithmTime(
+            final String testNumber,
+            final String algorithmName,
+            int size,
+            final int bound
+    ) {
+    }
+
 
     public static void main(String[] args) {
 
