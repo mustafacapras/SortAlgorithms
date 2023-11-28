@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 
 public class InsertionSortTest {
@@ -28,6 +29,30 @@ public class InsertionSortTest {
         System.out.println(testNumber + ". Test : Time " + algorithmName + ": " + sec + " sec, with " + size + " size data.");
     }
 
+    public static void testAlgorithm(
+            String algorithmName,
+            int size,
+            int bound
+    ) {
+        int[] sortedArray = InsertionSort.sort(generateRandomDataArray(size, bound));
+        System.out.println("Sorted Array (using " + algorithmName + "): " + Arrays.toString(sortedArray));
+
+
+        if (isSorted(sortedArray)) {
+            System.out.println("Sorting is correct.\n");
+        } else {
+            System.out.println("Sorting is incorrect.\n");
+        }
+    }
+
+    private static boolean isSorted(int[] arr) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            if (arr[i] > arr[i + 1]) {
+                return false;
+            }
+        }
+        return true;
+    }
 
     public static void main(String[] args) {
 
