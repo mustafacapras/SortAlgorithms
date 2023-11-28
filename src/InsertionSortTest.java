@@ -55,7 +55,14 @@ public class InsertionSortTest {
     }
 
     public static void main(String[] args) {
+        int testSize = 10;
+        int dataBound = 100;
 
+
+        testAlgorithmTime("1", "InsertionSort", testSize, dataBound);
+
+
+        testAlgorithm("InsertionSort", testSize, dataBound);
     }
 }
 
