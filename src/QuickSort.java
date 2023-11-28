@@ -24,4 +24,10 @@ public class QuickSort {
         swap(arr, i + 1, high);
         return i + 1;
     }
+
+    private static void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
 }
